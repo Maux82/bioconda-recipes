@@ -9,15 +9,14 @@ source:
   md5: 481672e190ea9e446cbfaf01bf0d02c1
 
 build:
-  number: 1
-  skip: True # [py27]
+  number: 0
+  skip: True # [py27 or py35]
 
 requirements:
   host:
-    - python >=3.6 
+    - python 
     - pandas >=0.23.*
     - numpy >=1.15.*
-    - argparse >1.2.1
     - scipy >=1.1.*
     - scikit-learn >=0.19
     - pymzml
@@ -28,10 +27,9 @@ requirements:
     - pymzml >=2.0.5 
 
   run:
-    - python >=3.6
+    - python
     - pandas >=0.23.*
     - numpy >=1.15.*
-    - argparse >1.2.1
     - scipy >=1.1.*
     - scikit-learn >0.19
     - pymzml 
